@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+message Character {
+  message Attribute {
+    int32 strength = 1;
+    int32 dexterity = 2;
+    int32 constitution = 3;
+    int32 intelligence = 4;
+    int32 wisdom = 5;
+    int32 charisma = 6;
+  }
+
+  string name = 1;
+  string player = 2;
+  string profession = 3;
+  string species = 4;
+  int32 level = 5;
+  bool playing = 6;
+  Attribute attributes = 7;
+  repeated string proficiencies = 8;
+}

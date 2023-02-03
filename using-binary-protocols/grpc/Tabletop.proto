@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+service Tabletop {
+  rpc rollDice(DiceRequest) returns (DiceResponse) {}
+  rpc createCharacter(CharacterRequest) returns (Character) {}
+}
+
+message DiceRequest {
+  int32 number = 1;
+  int32 sides = 2;
+}
+
+message DiceResponse {
+  int32 result = 1;
+}
+
+message CharacterRequest {
+  string name = 1;
+}
+
+message Character {
+  message Attribute {
+    int32 strength = 1;
+    int32 dexterity = 2;
+    int32 constitution = 3;
+    int32 intelligence = 4;
+    int32 wisdom = 5;
+    int32 charisma = 6;
+  }
+
+  string name = 1;
+  Attribute attributes = 2;
+}

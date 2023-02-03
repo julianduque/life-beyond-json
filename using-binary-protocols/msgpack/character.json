@@ -1,0 +1,22 @@
+{
+  "name": "Baal",
+  "player": "Julian Duque",
+  "profession": "Developer and Educator",
+  "species": "Human",
+  "playing": true,
+  "level": 14,
+  "attributes": {
+    "strength": 12,
+    "dexterity": 9,
+    "constitution": 10,
+    "intelligence": 13,
+    "wisdom": 9,
+    "charisma": 14
+  },
+  "proficiencies": [
+    "node",
+    "backend",
+    "rpgs",
+    "education"
+  ]
+}

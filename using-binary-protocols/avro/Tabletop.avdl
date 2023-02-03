@@ -1,0 +1,18 @@
+protocol Tabletop {
+  record Attribute {
+    int strength;
+    int dexterity;
+    int constitution;
+    int intelligence;
+    int wisdom;
+    int charisma;
+  }
+
+  record Character {
+    string name;
+    Attribute attributes;
+  }
+
+  int rollDice(int number, int sides);
+  Character createCharacter(string name);
+}

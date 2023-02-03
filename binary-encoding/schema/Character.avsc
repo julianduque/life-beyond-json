@@ -1,0 +1,71 @@
+{
+  "type": "record",
+  "name": "Character",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "player",
+      "type": "string"
+    },
+    {
+      "name": "profession",
+      "type": "string"
+    },
+    {
+      "name": "species",
+      "type": "string"
+    },
+    {
+      "name": "playing",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "name": "level",
+      "type": "int"
+    },
+    {
+      "name": "attributes",
+      "type": {
+        "type": "record",
+        "name": "Attribute",
+        "fields": [
+          {
+            "name": "strength",
+            "type": "int"
+          },
+          {
+            "name": "dexterity",
+            "type": "int"
+          },
+          {
+            "name": "constitution",
+            "type": "int"
+          },
+          {
+            "name": "intelligence",
+            "type": "int"
+          },
+          {
+            "name": "wisdom",
+            "type": "int"
+          },
+          {
+            "name": "charisma",
+            "type": "int"
+          }
+        ]
+      }
+    },
+    {
+      "name": "proficiencies",
+      "type": {
+        "type": "array",
+        "items": "string"
+      }
+    }
+  ]
+}
